@@ -25,7 +25,7 @@ InversifyJS 是一个轻量的 (4KB) 控制反转容器 (IoC)，可用于编写 
 ## 为什么要有 InversifyJS?
 JavaScript 现在支持面向对象编程，基于类的继承。这些特性很不错，但事实上它们也是
 [危险的](https://medium.com/@dan_abramov/how-to-use-classes-and-sleep-at-night-9af8de78ccb4)。
-我们需要一个优秀的面向对象设计（比如 [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))，[Composite Reuse](https://en.wikipedia.org/wiki/Composition_over_inheritance)等）来保护我们避免这些威胁。然而，面向对象的设计是复杂的，所以我们创建了 InversifyJS。
+我们需要一个优秀的面向对象设计（比如 [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))，[Composite Reuse](https://en.wikipedia.org/wiki/Composition_over_inheritance)等）来保护我们避免这些威胁。然而，面向对象的设计是复杂的，所以我们创建了 InversifyJS。
 
 InversifyJS 是一个工具，它能帮助 JavaScript 开发者，写出出色的面向对象设计的代码。
 

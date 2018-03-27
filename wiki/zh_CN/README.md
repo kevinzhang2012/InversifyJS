@@ -20,10 +20,10 @@
 
 ## 简介
 InversifyJS 是一个轻量的 (4KB) 控制反转容器 (IoC)，可用于编写 TypeScript 和 JavaScript 应用。
-它使用类构造函数去定义和注入它的依赖。InversifyJS API 很友好易懂, 鼓励对 OOP 和 IoC 最佳实践的应用.
+它使用类构造函数去定义和注入它的依赖。InversifyJS API 很友好易懂, 是鼓励对 OOP 和 IoC 最佳实践的应用.
 
 ## 为什么要有 InversifyJS?
-JavaScript 现在支持面向对象编程，基于类的继承。 这些特性不错但事实上它们也是
+JavaScript 现在支持面向对象编程，基于类的继承。这些特性很不错，但事实上它们也是
 [危险的](https://medium.com/@dan_abramov/how-to-use-classes-and-sleep-at-night-9af8de78ccb4)。
 我们需要一个优秀的面向对象设计（比如 [SOLID](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))，[Composite Reuse](https://en.wikipedia.org/wiki/Composition_over_inheritance)等）来保护我们避免这些威胁。然而，面向对象的设计是复杂的，所以我们创建了 InversifyJS。
 
@@ -56,7 +56,7 @@ InversifyJS有4个主要目标:
 
 ## 安装
 
-您可以使用`npm`获得最新的版本和类型定义：
+您可以使用`npm`获得最新的版本和类型定义：
 
 ```
 $ npm install inversify reflect-metadata --save
@@ -88,7 +88,7 @@ inversifyjs需要现代JavaScript引擎，支持以下特性
 - [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) (Only required if using [activation handlers](https://github.com/inversify/InversifyJS/blob/master/wiki/activation_handler.md))
 
 
-如果您的运行环境不支持这些特性，您可能需要导入 `shim` 或 `polyfill`
+如果您的运行环境不支持这些特性，您可能需要导入 `shim` 或 `polyfill`
 
 > ：警示： **`reflect-metadata` `polyfill` 应该在您整个应用中只导入一次** 因为 `Reflect` 对象需要成为一个全局的单例。 更多细节可以在[这里](https://github.com/inversify/InversifyJS/issues/262#issuecomment-227593844)找到。 
 
@@ -222,7 +222,7 @@ export { myContainer };
 
 ### 步骤 4: 解析依赖
 
-您可以使用方法 `get<T>` 从 `Container` 中获得依赖。记得您应该在[根结构](http://blog.ploeh.dk/2011/07/28/CompositionRoot/)(尽可能靠近应用程序的入口点的位置)去解析依赖，避免[服务器定位反模式](http://blog.ploeh.dk/2010/02/03/ServiceLocatorisanAnti-Pattern/)。
+您可以使用方法 `get<T>` 从 `Container` 中获得依赖。记得您应该在[根结构](http://blog.ploeh.dk/2011/07/28/CompositionRoot/)(尽可能靠近应用程序的入口点的位置)去解析依赖，避免[服务器定位反模式](http://blog.ploeh.dk/2010/02/03/ServiceLocatorisanAnti-Pattern/)。
 
 ```ts
 import { myContainer } from "./inversify.config";
@@ -272,7 +272,7 @@ InversifyJS 支持 ES5 和 ES6 而且可以在没有 TypeScript 环境下使用�
 请查阅 [wiki](https://github.com/inversify/InversifyJS/blob/master/wiki/readme.md) 获取更多细节。
 
 ## 生态
-为了提供艺术般的开发体验，我们也不断努力:
+为了提供艺术般的开发体验，我们也在不断努力:
 
 - [中间件插件](https://github.com/inversify/InversifyJS/blob/master/wiki/ecosystem.md#extensions)
 - [开发工具](https://github.com/inversify/InversifyJS/blob/master/wiki/ecosystem.md#development-tools)
@@ -280,16 +280,16 @@ InversifyJS 支持 ES5 和 ES6 而且可以在没有 TypeScript 环境下使用�
 
 请查阅 [生态 wiki 页](https://github.com/inversify/InversifyJS/blob/master/wiki/ecosystem.md) 去了解更多。
 
-## Support
+## 支持
 如果您遇到任何问题，我们乐意帮忙。您可以使用 [问题页](https://github.com/inversify/InversifyJS/issues) 报告问题。
 
 如果您想要和开发团队分享您的想法或者加入我们，您可以参加 [论坛讨论](https://groups.google.com/forum/#!forum/inversifyjs)。您也可以查看 [wiki](https://github.com/inversify/InversifyJS/blob/master/wiki/readme.md) 来了解更多关于 InversifyJS。
 
-## Acknowledgements
+## 声明
 
 Thanks a lot to all the [contributors](https://github.com/inversify/InversifyJS/graphs/contributors), all the developers out there using InversifyJS and all those that help us to spread the word by sharing content about InversifyJS online. Without your feedback and support this project would not be possible.
 
-## License
+## 执照
 
 License under the MIT License (MIT)
 

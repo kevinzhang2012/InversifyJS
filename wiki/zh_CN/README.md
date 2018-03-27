@@ -82,10 +82,10 @@ Inversify npm 包已经包含了 InversifyJS 的类型定义
 
 inversifyjs需要现代JavaScript引擎，支持以下特性
 
-- [Reflect metadata](https://rbuckton.github.io/reflect-metadata/)
+- [反射元数据](https://rbuckton.github.io/reflect-metadata/)(Reflect metadata)
 - [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
-- [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) (Only required if using [provider injection](https://github.com/inversify/InversifyJS/blob/master/wiki/provider_injection.md))
-- [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) (Only required if using [activation handlers](https://github.com/inversify/InversifyJS/blob/master/wiki/activation_handler.md))
+- [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) (仅在使用[Provider注入](https://github.com/inversify/InversifyJS/blob/master/wiki/provider_injection.md)时需要)
+- [代理](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) (仅在使用[activation handlers](https://github.com/inversify/InversifyJS/blob/master/wiki/activation_handler.md)时需要)
 
 
 如果您的运行环境不支持这些特性，您可能需要导入 `shim` 或 `polyfill`
